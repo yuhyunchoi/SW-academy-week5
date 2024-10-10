@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Main",
+            "projectName": "simplecurl",
+            "args" : ["-d", "-e","-o", "original"]
+        },
+        {
+            "type": "java",
+            "name": "SCurl1",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.SimpleCurl",
+            "projectName": "simplecurl",
+            "args" : ["-v", "http://httpbin.org/get"]
+        },
+        {
+            "type": "java",
+            "name": "SCurl2",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.SimpleCurl",
+            "projectName": "simplecurl",
+            "args" : ["-X", "GET", "http://httpbin.org/get"]
+        },
+        {
+            "type": "java",
+            "name": "SCurl3",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.SimpleCurl",
+            "projectName": "simplecurl",
+            "args" : ["-v", "-X", "GET", "http://httpbin.org/get"]
+        },
+        {
+            "type": "java",
+            "name": "SCurl4",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.SimpleCurl",
+            "projectName": "simplecurl",
+            "args" : ["-v", "-H", "X-Custom-Header: NA", "http://httpbin.org/get"]
+        },  
+        {
+            "type": "java",
+            "name": "SCurl5",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.SimpleCurl",
+            "projectName": "simplecurl",
+            "args": ["-v", "-X", "POST", "-d", "{\"hello\":\"world\"}", "-H", "Content-Type: application/json", "http://httpbin.org/post"]
+        }   
+    ]
+}
